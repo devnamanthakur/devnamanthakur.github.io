@@ -1,5 +1,6 @@
-import { DiJava } from "react-icons/di";
 import { ProjectLink } from "./components/ProjectLink";
+import { DiJava } from "react-icons/di";
+import { FaLinkedin } from "react-icons/fa";
 import {
   SiPython,
   SiJavascript,
@@ -9,6 +10,8 @@ import {
   SiReact,
   SiPostgresql,
   SiGit,
+  SiGithub,
+  SiGmail,
 } from "react-icons/si";
 
 function App() {
@@ -324,91 +327,128 @@ function App() {
                   </h3>
                 </div>
               </li>
-              <li className="marker:font-bold marker:text-xl">
-              <strong className="text-xl">TypeScript Banking System </strong>
-              <div className="max-w-4xl pb-4 text-sm/8 font-extralight tracking-tight text-gray-100 font-stretch-condensed">
-                <ProjectLink
-                  href="https://github.com/devnamanthakur/Bank"
-                  label="view project"
-                />
-                <h3 className="mt-4 font-bold font-stretch-expanded">
-                  The Hook
-                  <p className="font-mono font-light">
-                    This lightweight local banking engine simulates core
-                    financial operations including account lifecycle management,
-                    secure fund transfers, and asynchronous data persistence.
-                    Built with Node.js and TypeScript, the system functions as a
-                    mini-database, using the file system to ensure user records
-                    remain intact across sessions while enforcing strict
-                    validation rules for every transaction.
-                  </p>
-                </h3>
-                <h3 className="font-bold font-stretch-expanded">
-                  Problem Solving
-                  <ol className="ml-6 list-disc">
-                    <li>
-                      <p className="font-mono font-light">
-                        Asynchronous Data Integrity: Solved the challenge of
-                        race conditions during file I/O by utilizing fs/promises
-                        to ensure account data is read and written sequentially,
-                        preventing data corruption during concurrent operations.
-                      </p>
-                    </li>
+              <li className="marker:text-xl marker:font-bold">
+                <strong className="text-xl">TypeScript Banking System </strong>
+                <div className="max-w-4xl pb-4 text-sm/8 font-extralight tracking-tight text-gray-100 font-stretch-condensed">
+                  <ProjectLink
+                    href="https://github.com/devnamanthakur/Bank"
+                    label="view project"
+                  />
+                  <h3 className="mt-4 font-bold font-stretch-expanded">
+                    The Hook
+                    <p className="font-mono font-light">
+                      This lightweight local banking engine simulates core
+                      financial operations including account lifecycle
+                      management, secure fund transfers, and asynchronous data
+                      persistence. Built with Node.js and TypeScript, the system
+                      functions as a mini-database, using the file system to
+                      ensure user records remain intact across sessions while
+                      enforcing strict validation rules for every transaction.
+                    </p>
+                  </h3>
+                  <h3 className="font-bold font-stretch-expanded">
+                    Problem Solving
+                    <ol className="ml-6 list-disc">
+                      <li>
+                        <p className="font-mono font-light">
+                          Asynchronous Data Integrity: Solved the challenge of
+                          race conditions during file I/O by utilizing
+                          fs/promises to ensure account data is read and written
+                          sequentially, preventing data corruption during
+                          concurrent operations.
+                        </p>
+                      </li>
 
-                    <li>
-                      <p className="font-mono font-light">
-                        Secure Identity Management: Integrated the uuid library
-                        to assign unique identifiers to every user, moving
-                        beyond simple index-based lookups to a more
-                        collision-resistant system for account retrieval and
-                        deletion.
-                      </p>
-                    </li>
+                      <li>
+                        <p className="font-mono font-light">
+                          Secure Identity Management: Integrated the uuid
+                          library to assign unique identifiers to every user,
+                          moving beyond simple index-based lookups to a more
+                          collision-resistant system for account retrieval and
+                          deletion.
+                        </p>
+                      </li>
 
-                    <li>
-                      <p className="font-mono font-light">
-                        Transaction Validation Logic: Engineered a multi-step
-                        verification process for fund transfers that checks for
-                        account existence, sufficient balance, and recipient
-                        validity before committing any changes to the local
-                        storage.
-                      </p>
-                    </li>
-                  </ol>
-                </h3>
-                <h3 className="font-bold font-stretch-expanded">
-                  Technical Highlights
-                  <ol className="ml-6 list-disc">
-                    <li>
-                      <p className="font-mono font-light">
-                        Persistent JSON Storage: Designed a local database layer
-                        using a userData.json architecture, enabling full CRUD
-                        (Create, Read, Update, Delete) capabilities without the
-                        overhead of an external database engine.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="font-mono font-light">
-                        Type-Safe CLI Interaction: Leveraged TypeScript
-                        interfaces and a custom readline promise wrapper to
-                        create a structured, type-safe command-line interface
-                        that handles user input gracefully.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="font-mono font-light">
-                        Business Logic Enforcement: Implemented strict domain
-                        rules, such as 18+ age restrictions and non-empty field
-                        requirements, to ensure the application layer maintains
-                        high-quality data.
-                      </p>
-                    </li>
-                  </ol>
-                </h3>
-              </div>
-
+                      <li>
+                        <p className="font-mono font-light">
+                          Transaction Validation Logic: Engineered a multi-step
+                          verification process for fund transfers that checks
+                          for account existence, sufficient balance, and
+                          recipient validity before committing any changes to
+                          the local storage.
+                        </p>
+                      </li>
+                    </ol>
+                  </h3>
+                  <h3 className="font-bold font-stretch-expanded">
+                    Technical Highlights
+                    <ol className="ml-6 list-disc">
+                      <li>
+                        <p className="font-mono font-light">
+                          Persistent JSON Storage: Designed a local database
+                          layer using a userData.json architecture, enabling
+                          full CRUD (Create, Read, Update, Delete) capabilities
+                          without the overhead of an external database engine.
+                        </p>
+                      </li>
+                      <li>
+                        <p className="font-mono font-light">
+                          Type-Safe CLI Interaction: Leveraged TypeScript
+                          interfaces and a custom readline promise wrapper to
+                          create a structured, type-safe command-line interface
+                          that handles user input gracefully.
+                        </p>
+                      </li>
+                      <li>
+                        <p className="font-mono font-light">
+                          Business Logic Enforcement: Implemented strict domain
+                          rules, such as 18+ age restrictions and non-empty
+                          field requirements, to ensure the application layer
+                          maintains high-quality data.
+                        </p>
+                      </li>
+                    </ol>
+                  </h3>
+                </div>
               </li>
             </ol>
+          </div>
+          <div className="mr-24 flex flex-col items-center">
+            <h2 className="mr-16 mb-10 ml-26 flex justify-center text-2xl font-semibold text-gray-100 font-stretch-extra-expanded">
+              Contact Me
+            </h2>
+            <div className="mt-0.5 grid gap-3 grid-cols-3 grid-rows-1 mb-20 ml-16">
+              <a
+                href="https://github.com/devnamanthakur"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="col-start-1 mt-1 row-start-1 flex h-20 w-60 items-center justify-center rounded-xl border-2 border-gray-100 transition-all 
+                hover:scale-105  duration-300">
+                  <SiGithub className="m-2 h-16 w-16 text-gray-100" />
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/naman-thakur-4a5189376/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="col-start-2 row-start-1 mt-0.5 flex h-20 w-60 items-center justify-center rounded-xl border-2 border-gray-100
+                transition-all hover:scale-105 hover:border-blue-500 duration-300">
+                  <FaLinkedin className="m-2 h-16 w-16 text-blue-600 hover:text-gray-100" />
+                </div>
+                </a>
+              <a
+                href="mailto:devnamanthakur853@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="col-start-2 row-start-1 mt-0.5 flex h-20 w-60 items-center justify-center rounded-xl border-2 border-gray-100 transition-all 
+                hover:scale-105 hover:border-red-500 duration-300">
+                  <SiGmail className="m-2  h-16 w-16 text-red-600 hover:text-gray-100" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
