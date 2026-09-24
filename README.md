@@ -1,10 +1,10 @@
 # Naman Thakur — Portfolio
 
-[![Deploy](https://github.com/devnamanthakur/devnamanthakur.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/devnamanthakur/devnamanthakur.github.io/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/devnamanthakur/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/devnamanthakur/portfolio/actions/workflows/deploy.yml)
 
 Personal portfolio website showcasing my skills, projects, and contact information.
 
-**Live site:** https://devnamanthakur.github.io
+**Live site:** https://devnamanthakur.github.io/portfolio/
 
 ## Tech Stack
 
